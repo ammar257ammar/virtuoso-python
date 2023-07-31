@@ -18,7 +18,7 @@ from sqlalchemy.sql.ddl import _CreateDropBase
 from sqlalchemy.connectors.pyodbc import PyODBCConnector
 from sqlalchemy.engine import default
 from sqlalchemy.sql.functions import GenericFunction
-from sqlalchemy.types import Binary as LargeBinary
+from sqlalchemy.types import LargeBinary as Binary
 from sqlalchemy.types import (
     CHAR, VARCHAR, TIME, NCHAR, NVARCHAR, DATETIME, FLOAT, String, NUMERIC,
     INTEGER, SMALLINT, VARBINARY, DECIMAL, TIMESTAMP, UnicodeText, REAL,
