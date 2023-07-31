@@ -8,7 +8,7 @@ import os
 #    print("PipSession import error")
 #    from pip.download import PipSession
 
-from pip.req import parse_requirements
+#from pip.req import parse_requirements
 
 #install_reqs = parse_requirements('requirements.txt', session=PipSession())
 #requires = [str(ir.req) for ir in install_reqs]
