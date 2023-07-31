@@ -2,16 +2,16 @@ from setuptools import setup, find_packages
 import sys
 import os
 
-try:  # pip >= 10
-    from pip._internal.download import PipSession
-except ImportError:  # pip <= 9.0.3
-    print("PipSession import error")
-    from pip.download import PipSession
+#try:  # pip >= 10
+#    from pip._internal.download import PipSession
+#except ImportError:  # pip <= 9.0.3
+#    print("PipSession import error")
+#    from pip.download import PipSession
 
 from pip.req import parse_requirements
 
-install_reqs = parse_requirements('requirements.txt', session=PipSession())
-requires = [str(ir.req) for ir in install_reqs]
+#install_reqs = parse_requirements('requirements.txt', session=PipSession())
+#requires = [str(ir.req) for ir in install_reqs]
 
 version = '0.12.6'
 try:
@@ -51,7 +51,7 @@ setup(name='virtuoso',
       include_package_data=True,
       zip_safe=False,
       tests_require=["nose"],
-      install_requires=requires,
+      #install_requires=requires,
       entry_points="""
           [sqlalchemy.dialects]
           virtuoso = virtuoso:alchemy.VirtuosoDialect
