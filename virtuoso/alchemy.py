@@ -18,10 +18,11 @@ from sqlalchemy.sql.ddl import _CreateDropBase
 from sqlalchemy.connectors.pyodbc import PyODBCConnector
 from sqlalchemy.engine import default
 from sqlalchemy.sql.functions import GenericFunction
+from sqlalchemy.types import Binary as LargeBinary
 from sqlalchemy.types import (
     CHAR, VARCHAR, TIME, NCHAR, NVARCHAR, DATETIME, FLOAT, String, NUMERIC,
     INTEGER, SMALLINT, VARBINARY, DECIMAL, TIMESTAMP, UnicodeText, REAL,
-    Unicode, Text, Float, Binary, UserDefinedType, TypeDecorator)
+    Unicode, Text, Float, UserDefinedType, TypeDecorator)
 from sqlalchemy.orm import column_property
 from sqlalchemy.ext.compiler import compiles
 from sqlalchemy.ext.hybrid import hybrid_property
