@@ -1,6 +1,6 @@
 -e git+https://github.com/ammar257ammar/pyodbc.git@v4-virtuoso#egg=pyodbc
 -e git+https://github.com/conversence/sqlalchemy-rdfbridge.git#egg=sqlalchemy-rdfbridge
 SQLAlchemy<1.5,>=1.4
-rdflib>=3
+rdflib<=6.3.2,>=3
 werkzeug>=0.11
 future>=0.15
